@@ -19,7 +19,7 @@ try {
 } catch(e){ console.log(e.message);}
 
 // FILTER
-// Filtre e retorne todos os números pares de um array.
+// Filtre usando exemplos com strings
 const animais = ["Gato", "Cachorro", "Gato Branco", "Cachorro Branco", "Papagaio Branco"];
 
 try {
@@ -28,3 +28,13 @@ try {
     console.log('Apenas animais cor branca: ' + animalBranco);
     console.log('Apenas cachoros: ' + cachorro);
 } catch(e) { console.log(e.message);}
+
+// Filtre e retorne todos os números pares de um array
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+function ehPar(num) {
+    if(num % 2 == 0) { return num; }
+}
+try {
+    const numPares = numeros.filter(ehPar);
+    console.log('\nNúmeros pares: ' + numPares);
+} catch(e) { console.log(e.message); }
